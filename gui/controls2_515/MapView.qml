@@ -78,6 +78,7 @@ MapPage {
         }
         // on azimuth changed
         compass.polled.connect(function(azimuth, rotation){ mapView.azimuth = azimuth; });
+        mapSettings.debugLevel = 2;
     }
 
     property QtObject mark: QtObject {
